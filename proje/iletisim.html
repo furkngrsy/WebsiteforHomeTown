@@ -1,0 +1,98 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="anasayfa">
+                    <a href="index.html">ANA SAYFA</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="ozgecmis.html">ÖZGEÇMİŞ</a>
+                        </li>
+                        <li>
+                            <a href="sehrim.html">ŞEHRİM</a>
+                        </li>
+                        <li>
+                            <a href="takimimiz.html">TAKIMIMIZ</a>
+                        </li>
+                        <li>
+                            <a href="iletisim.html">İLETİŞİM</a>
+                        </li>
+                        <li>
+                            <a href="login.html">GİRİŞ YAP</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id="iletisim" class="iletisimArea">
+            <div id="iletisimCaption" class="Caption">
+                <h1>İLETİŞİM</h1>
+                <p>İRTİBATA GEÇİN</p>
+            </div>
+        </section>
+        <div class="form">
+            <form action="iletisimcontrol.php" method="post">
+                <p class="yazi">-Adı :</p><br>
+                <input type="text" name="adi" placeholder="Adınızı Giriniz." required><br>
+                <p class="yazi">-Soyadı :</p><br>
+                <input type="text" name="soyadi" placeholder="Soyadınızı Giriniz." required><br>
+                <p class="yazi">-E-mail :</p><br>
+                <input type="email" name="mail" placeholder="E-mail Giriniz."><br>
+                <p class="yazi">-Okul :</p><br>
+                <input type="text" name="okul" placeholder="Okul Giriniz."><br>
+                <p class="yazi">-Öğretim Zamanı :</p><br>
+                <input list="ogretim" required>
+                <datalist id="ogretim">
+                    <option value="1.Öğretim">
+                    </option>
+                    <option value="2.Öğretim">
+                    </option>
+                </datalist>
+                <p class="yazi">-Cinsiyet :</p><br>
+                <input type="radio" name="cinsiyet" value="erkek">Erkek<br>
+                <input type="radio" name="cinsiyet" value="kadin">Kadın<br>
+                <p class="yazi">-Hobileriniz :</p>
+                <input type="checkbox" name="hobi" value="Okumak">Okumak<br>
+                <input type="checkbox" name="hobi" value="Yuzmek">Yüzmek<br>
+                <input type="checkbox" name="hobi" value="Futbol">Futbol<br>
+                <input type="checkbox" name="hobi" value="Oyun">Oyun<br>
+                <p class="yazi">-Resim Ekle :</p>
+                <input type="file" name="dosya">
+                <p class="yazi">-Metin Yazınız :</p>
+                <textarea name= "mesaj" rows="10" cols"30">
+                </textarea><br>
+                <input type="reset" value="TEMİZLE">
+                <input type="submit" value="GÖNDER"><br>
+                
+            </form>
+        </div>
+        <footer class="sectionArea">
+            <div class="container">
+                <div class="cols">
+                    <div class="lastBody">
+                        <h3>SOSYAL MEDYA</h3>
+                        <ul class="socialmedia">
+                            <li>
+                                <a href="https://www.instagram.com/furkngrsy/" target="_blank">İNSTAGRAM</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/furkngursoy" target="_blank">TWİTTER</a>
+                            </li>
+                            <li>
+                                <a href="index.html">MY PAGE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
